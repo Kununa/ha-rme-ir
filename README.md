@@ -125,6 +125,8 @@ pytest
 
 GitHub Actions runs the same tests on every push to `main` and on pull requests (see [`tests.yml`](.github/workflows/tests.yml)).
 
+**Releasing:** GitHub → *Actions* → *Release* → *Run workflow*, enter the new version (e.g. `0.3.0`). The workflow runs the tests, sets the version in `manifest.json`, tags `v0.3.0`, and publishes a release with generated notes and `rme_infrared.zip`, which HACS installs. Tick *dry run* to try it without publishing anything.
+
 ### Adding a model
 
 1. Add an `RmeModel` entry to `MODELS` in [`const.py`](custom_components/rme_infrared/const.py), with its code table and input codes. If the device has a function no existing model has, add an `RmeKey` and a `KEY_NAMES` entry for it.

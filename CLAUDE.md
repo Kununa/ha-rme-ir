@@ -51,6 +51,17 @@ MSYS_NO_PATHCONV=1 docker run --rm -v "$(pwd -W):/src:ro" rme-infrared-test -q  
 - In tests, assert on `mock_emitter.sent_codes()`, a list of `(address, command)` tuples. Look entities up with `entity_id_for(...)` (by unique ID) rather than hard-coding them, except where the test checks the entity ID itself.
 - Write expected codes as literals taken from RME's tables, not computed from `const.py`.
 
+## Releasing
+
+Releases go through `.github/workflows/release.yml`, started by hand from the Actions tab with a version such as `0.3.0`. The workflow:
+
+1. runs the tests
+2. writes the version into `manifest.json` and commits it to `main` if it changed
+3. tags `v<version>`
+4. publishes a GitHub release with `rme_infrared.zip`
+
+`hacs.json` sets `zip_release: true`, so HACS installs that zip and needs at least one published release. Don't bump `manifest.json`'s version by hand. Leave it to the workflow.
+
 ## Deploying
 
 The integration is deployed by copying `custom_components/rme_infrared/` into `/config/custom_components/` on the Home Assistant host, then restarting Home Assistant. Python changes need a restart. Exclude `__pycache__`. The host-specific SSH details live in the user's Claude memory, not in this repo.

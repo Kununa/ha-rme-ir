@@ -1,1 +1,6 @@
-{ "name": "RME Infrared", "render_readme": true }
+{
+  "name": "RME Infrared",
+  "homeassistant": "2026.10.0",
+  "zip_release": true,
+  "filename": "rme_infrared.zip"
+}
