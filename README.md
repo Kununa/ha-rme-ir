@@ -1,5 +1,13 @@
 # RME Infrared for Home Assistant
 
+> **Vibe coded.** This integration was written almost entirely by an AI
+> (Claude Code) in conversation with its owner. It was tested against one real
+> device (ADI-2 DAC FS) on Home Assistant 2026.10 through an ESPHome IR proxy
+> and has an automated test suite, but the code has not been reviewed line by
+> line by a human. The ADI-2 Pro code table follows RME's published list and
+> has not been tried on hardware. Use it at your own risk, and expect rough
+> edges.
+
 Control RME ADI-2 series converters from Home Assistant over infrared. You need an IR transmitter that Home Assistant exposes as an `infrared` entity, such as an ESPHome IR proxy.
 
 The integration sends the official NEC codes that RME publishes for its remotes. That includes the extended codes for programmable remotes, such as the DAC filters, Crossfeed, the Setup slots and direct input selection.
@@ -26,7 +34,7 @@ RME publishes no table for the ADI-2/4 Pro SE or the ADI-2 Pro EX, so they aren'
 
 ### HACS
 
-1. In HACS, open the menu and choose **Custom repositories**. Add this repository as an **Integration**.
+1. In HACS, open the menu and choose **Custom repositories**. Add `https://github.com/Kununa/ha-rme-ir` as an **Integration**.
 2. Install **RME Infrared**, then restart Home Assistant.
 
 ### Manual
