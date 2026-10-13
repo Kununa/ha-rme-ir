@@ -1,4 +1,13 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/rme_infrared/brand/dark_logo@2x.png">
+    <img src="custom_components/rme_infrared/brand/logo@2x.png" alt="RME logo" width="320">
+  </picture>
+</p>
+
 # RME Infrared for Home Assistant
+
+[![Tests](https://github.com/Kununa/ha-rme-ir/actions/workflows/tests.yml/badge.svg)](https://github.com/Kununa/ha-rme-ir/actions/workflows/tests.yml)
 
 > **Vibe coded.** This integration was written almost entirely by an AI
 > (Claude Code) in conversation with its owner. It was tested against one real
@@ -112,6 +121,8 @@ On Linux or macOS you can also run them directly:
 pip install -r requirements_test.txt
 pytest
 ```
+
+GitHub Actions runs the same tests on every push to `main` and on pull requests (see [`tests.yml`](.github/workflows/tests.yml)).
 
 ### Adding a model
 
