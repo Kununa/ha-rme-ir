@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="custom_components/rme_infrared/brand/dark_logo@2x.png">
-    <img src="custom_components/rme_infrared/brand/logo@2x.png" alt="RME logo" width="320">
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/rme_infrared/brand/dark_icon@2x.png">
+    <img src="custom_components/rme_infrared/brand/icon@2x.png" alt="RME Infrared icon" width="128">
   </picture>
 </p>
 
@@ -129,8 +129,8 @@ GitHub Actions runs the same tests on every push to `main` and on pull requests 
 1. Add an `RmeModel` entry to `MODELS` in [`const.py`](custom_components/rme_infrared/const.py), with its code table and input codes. If the device has a function no existing model has, add an `RmeKey` and a `KEY_NAMES` entry for it.
 2. Extend the tests in [`tests/`](tests/), particularly `test_const.py`. Base expected codes on RME's published table, not on the implementation.
 
-The brand images in `custom_components/rme_infrared/brand/` are generated from [`brand-src/rme-logo.svg`](brand-src/rme-logo.svg) with [`brand-src/make_brand.py`](brand-src/make_brand.py).
+The icon is original artwork for this project, not RME's logo. The PNGs in `custom_components/rme_infrared/brand/` are generated from [`brand-src/icon.svg`](brand-src/icon.svg) with [`brand-src/make_brand.py`](brand-src/make_brand.py).
 
 ## Disclaimer
 
-This is an unofficial project and isn't affiliated with or endorsed by RME. *RME* and the RME logo are trademarks of RME Audio AG / Audio AG.
+This is an unofficial project and isn't affiliated with or endorsed by RME. *RME* and *ADI-2* are trademarks of their respective owner.

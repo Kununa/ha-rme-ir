@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Original artwork for this project: an IR remote with a volume knob
+       sending infrared waves. BODY/DETAIL are replaced per theme by
+       make_brand.py; the waves keep their infrared red in both themes. -->
+  <defs>
+    <linearGradient id="ir" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#F43F5E"/>
+      <stop offset="1" stop-color="#9F1239"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Infrared waves from the LED at (128, 92) -->
+  <g fill="none" stroke="url(#ir)" stroke-linecap="round" stroke-width="12">
+    <path d="M108.2 72.2 A28 28 0 0 1 147.8 72.2"/>
+    <path d="M91.2 55.2 A52 52 0 0 1 164.8 55.2" opacity="0.8"/>
+    <path d="M74.3 38.3 A76 76 0 0 1 181.7 38.3" opacity="0.6"/>
+  </g>
+
+  <!-- Remote body -->
+  <rect x="82" y="96" width="92" height="148" rx="26" fill="BODY"/>
+
+  <!-- IR LED -->
+  <circle cx="128" cy="96" r="9" fill="#E11D48"/>
+
+  <!-- Volume knob with indicator -->
+  <circle cx="128" cy="156" r="27" fill="none" stroke="DETAIL" stroke-width="7"/>
+  <line x1="128" y1="156" x2="114" y2="140" stroke="DETAIL" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Buttons -->
+  <circle cx="108" cy="212" r="7" fill="DETAIL"/>
+  <circle cx="128" cy="212" r="7" fill="DETAIL"/>
+  <circle cx="148" cy="212" r="7" fill="DETAIL"/>
+</svg>
