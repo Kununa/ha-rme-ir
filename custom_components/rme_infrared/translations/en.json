@@ -1,0 +1,22 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This RME device is already configured with this transmitter.",
+      "no_emitters": "No infrared transmitter entities found. Set up an IR proxy first."
+    },
+    "error": {
+      "invalid_address": "Enter a 16-bit hexadecimal address, e.g. 3412."
+    },
+    "step": {
+      "user": {
+        "title": "Set up an RME device (IR)",
+        "description": "Pick your RME model and the IR transmitter that points at it. The NEC address 3412 matches RME's documented remote ID 1234 (hex).",
+        "data": {
+          "model": "Model",
+          "infrared_entity_id": "IR transmitter",
+          "address": "NEC address (hex)"
+        }
+      }
+    }
+  }
+}
