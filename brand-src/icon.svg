@@ -1,33 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-  <!-- Original artwork for this project: an IR remote with a volume knob
-       sending infrared waves. BODY/DETAIL are replaced per theme by
-       make_brand.py; the waves keep their infrared red in both themes. -->
-  <defs>
-    <linearGradient id="ir" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#F43F5E"/>
-      <stop offset="1" stop-color="#9F1239"/>
-    </linearGradient>
-  </defs>
+  <!-- Original artwork for this project: a simplified front view of a
+       half-rack ADI-2 style converter (power button, two headphone jacks,
+       big volume knob, button column, display, two encoders) receiving
+       infrared waves from an IR LED below it. No logos or text.
+       BODY/DETAIL are replaced per theme by make_brand.py; only the IR is red. -->
 
-  <!-- Infrared waves from the LED at (128, 92) -->
-  <g fill="none" stroke="url(#ir)" stroke-linecap="round" stroke-width="12">
-    <path d="M108.2 72.2 A28 28 0 0 1 147.8 72.2"/>
-    <path d="M91.2 55.2 A52 52 0 0 1 164.8 55.2" opacity="0.8"/>
-    <path d="M74.3 38.3 A76 76 0 0 1 181.7 38.3" opacity="0.6"/>
+  <!-- Chassis and feet -->
+  <rect x="10" y="44" width="236" height="64" rx="9" fill="BODY"/>
+  <rect x="24" y="104" width="24" height="9" rx="3" fill="BODY"/>
+  <rect x="208" y="104" width="24" height="9" rx="3" fill="BODY"/>
+
+  <!-- Power button -->
+  <circle cx="30" cy="78" r="8" fill="none" stroke="DETAIL" stroke-width="3.5"/>
+
+  <!-- Headphone jacks -->
+  <g fill="none" stroke="DETAIL" stroke-width="3.5">
+    <circle cx="58" cy="82" r="6"/>
+    <circle cx="80" cy="82" r="6"/>
   </g>
 
-  <!-- Remote body -->
-  <rect x="82" y="96" width="92" height="148" rx="26" fill="BODY"/>
+  <!-- Big volume knob -->
+  <circle cx="118" cy="76" r="19" fill="none" stroke="DETAIL" stroke-width="6"/>
 
-  <!-- IR LED -->
-  <circle cx="128" cy="96" r="9" fill="#E11D48"/>
+  <!-- Button column -->
+  <g fill="DETAIL">
+    <rect x="148" y="53" width="12" height="7" rx="2"/>
+    <rect x="148" y="65" width="12" height="7" rx="2"/>
+    <rect x="148" y="77" width="12" height="7" rx="2"/>
+    <rect x="148" y="89" width="12" height="7" rx="2"/>
+  </g>
 
-  <!-- Volume knob with indicator -->
-  <circle cx="128" cy="156" r="27" fill="none" stroke="DETAIL" stroke-width="7"/>
-  <line x1="128" y1="156" x2="114" y2="140" stroke="DETAIL" stroke-width="7" stroke-linecap="round"/>
+  <!-- Display -->
+  <rect x="168" y="54" width="46" height="44" rx="3" fill="DETAIL"/>
 
-  <!-- Buttons -->
-  <circle cx="108" cy="212" r="7" fill="DETAIL"/>
-  <circle cx="128" cy="212" r="7" fill="DETAIL"/>
-  <circle cx="148" cy="212" r="7" fill="DETAIL"/>
+  <!-- Two encoders -->
+  <g fill="none" stroke="DETAIL" stroke-width="3.5">
+    <circle cx="230" cy="63" r="7"/>
+    <circle cx="230" cy="89" r="7"/>
+  </g>
+
+  <!-- IR LED below, waves rising into the unit (stronger on arrival) -->
+  <circle cx="128" cy="212" r="8" fill="#E11D48"/>
+  <g fill="none" stroke="#E11D48" stroke-linecap="round" stroke-width="11">
+    <path d="M108.7 189 A30 30 0 0 1 147.3 189" opacity="0.45"/>
+    <path d="M92 169.1 A56 56 0 0 1 164 169.1" opacity="0.7"/>
+    <path d="M75.3 149.2 A82 82 0 0 1 180.7 149.2"/>
+  </g>
 </svg>

@@ -24,8 +24,8 @@ template = svg_path.read_text(encoding="utf-8")
 
 RENDER = 1024  # render large, downscale for clean edges
 THEMES = {
-    "": {"BODY": "#1F2937", "DETAIL": "#F9FAFB"},  # light UI: dark remote
-    "dark_": {"BODY": "#E5E7EB", "DETAIL": "#111827"},  # dark UI: light remote
+    "": {"BODY": "#1F2937", "DETAIL": "#F9FAFB"},  # light UI: dark unit
+    "dark_": {"BODY": "#E5E7EB", "DETAIL": "#111827"},  # dark UI: light unit
 }
 
 

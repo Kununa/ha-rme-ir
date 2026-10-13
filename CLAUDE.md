@@ -13,7 +13,7 @@ A Home Assistant custom integration, `rme_infrared`, that controls RME ADI-2 ser
   - `strings.json` and `translations/en.json`: keep these identical. Edit `en.json`, then copy it over `strings.json`.
   - `brand/`: PNG icons (`icon`, `dark_icon`, each with `@2x`), generated. Don't edit them by hand. There's deliberately no `logo.png`, so Home Assistant falls back to the icon.
 - `tests/`: tests built on pytest-homeassistant-custom-component. `conftest.py` provides `MockInfraredEmitterEntity`, which records the commands it is asked to send.
-- `brand-src/`: `icon.svg` (original artwork: a remote with a volume knob sending IR waves) and `make_brand.py`, which renders the light and dark PNGs with headless Edge and Pillow. **Never use RME's own logo or wordmark.** It is copyrighted and was deliberately removed.
+- `brand-src/`: `icon.svg` (original artwork: a simplified half-rack DAC front receiving IR waves) and `make_brand.py`, which renders the light and dark PNGs with headless Edge and Pillow. **Never use RME's own logo or wordmark.** It is copyrighted and was deliberately removed.
 
 ## Domain facts
 
