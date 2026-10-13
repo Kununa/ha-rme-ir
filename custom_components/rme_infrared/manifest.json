@@ -1,9 +1,13 @@
 {
   "domain": "rme_infrared",
   "name": "RME Infrared",
-  "codeowners": ["@Kununa"],
+  "codeowners": [
+    "@Kununa"
+  ],
   "config_flow": true,
-  "dependencies": ["infrared"],
+  "dependencies": [
+    "infrared"
+  ],
   "documentation": "https://github.com/Kununa/ha-rme-ir",
   "integration_type": "device",
   "iot_class": "assumed_state",
